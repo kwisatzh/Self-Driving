@@ -1,6 +1,3 @@
-#**Behavioral Cloning** 
-
-
 ---
 
 **Behavioral Cloning Project**
@@ -40,8 +37,7 @@ python drive.py model.h5
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
-
+### Model Details
 
 My model consists of a convolution neural network with 5x5 filter sizes and depths between 32 and 128 (model.py lines 88-93) 
 
@@ -59,7 +55,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually (m
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road as well as counter clock-wise driving. 
 For details about how I created the training data, see the next section. 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
 The overall strategy for deriving a model architecture was to first try out the simple LeNet model, and then increase complexity to improve perfomance. 
 
@@ -74,7 +70,7 @@ The final step was to run the simulator to see how well the car was driving arou
 I did the BGR to RGB conversion, and started getting good results. 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+#### Final Model Architecture
 
 The final model architecture (model.py lines 88-101) consisted of a convolution neural network with the following layers and layer sizes:
 Layer 1: 32 with filter 5x5, activation RELU
